@@ -1,0 +1,41 @@
+ul{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+
+}
+ul li a{
+    height: 26rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 1rem;
+    display: flex;
+    line-height: 1.5rem;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+img{
+    height: 18rem;
+    width: 20rem;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.content{
+   padding: 0.5rem 1rem;
+   position: relative;
+}
+.favorite{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.4rem;
+}

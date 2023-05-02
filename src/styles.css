@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    font-family:Quicksand,sans-serif ;
+    font-style: 18px;
+}
+html{
+    font-style: 16px;
+}
+a{
+    text-decoration: none;
+}
