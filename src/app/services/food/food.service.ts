@@ -22,14 +22,14 @@ export class FoodService {
      },
      {
       id:2,
-      name:'Butter Paneer with Naan',
-      price:18,
-      cookTime:'35-40',
+      name:'Veg Pizza',
+      price:9,
+      cookTime:'25-30',
       favorite:true,
-      origins:['India','Australia'],
-      star:4.8,
+      origins:['Italy','Germany'],
+      star:4.3,
       imageUrl: '/assets/food2.jpg',
-      tags:['meal','Dinner']
+      tags:['fastfood','lunch','pizza']
     },
     {
       id:3,
@@ -44,7 +44,7 @@ export class FoodService {
     },
     {
       id:4,
-      name:'Fish fry',
+      name:'Fish Fry',
       price:15,
       cookTime:'35-40',
       favorite:false,
@@ -55,7 +55,7 @@ export class FoodService {
     },
     {
       id:5,
-      name:'Fried rice',
+      name:'Fried Rice',
       price:6,
       cookTime:'35-40',
       favorite:false,
@@ -77,7 +77,7 @@ export class FoodService {
     },
     {
       id:7,
-      name:'Dal fry',
+      name:'Dal Fry',
       price:9,
       cookTime:'35-40',
       favorite:true,
@@ -88,7 +88,7 @@ export class FoodService {
     },
     {
       id:8,
-      name:'idli sambhar',
+      name:'Idli Sambhar',
       price:5,
       cookTime:'25-30',
       favorite:false,
@@ -96,7 +96,29 @@ export class FoodService {
       star:3.8,
       imageUrl: '/assets/food8.jpg',
       tags:['meal','Dinner']
-    }
+    },
+    {
+      id:9,
+      name:'Butter Paneer with Naan',
+      price:18,
+      cookTime:'35-40',
+      favorite:true,
+      origins:['India','Australia'],
+      star:4.8,
+      imageUrl: '/assets/food9.jpg',
+      tags:['meal','Dinner']
+    },
+    {
+    id:10,
+    name:'Chicken Pizza',
+    price:14,
+    cookTime:'25-30',
+    favorite:true,
+    origins:['Italy','Germany','USA'],
+    star:4.6,
+    imageUrl: '/assets/food10.jpg',
+    tags:['fastfood','lunch','pizza']
+  }
     ]
   }
 }
