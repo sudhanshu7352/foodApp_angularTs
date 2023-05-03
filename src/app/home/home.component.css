@@ -10,7 +10,7 @@ ul{
 }
 ul li a{
     height: 22rem;
-    width: 20rem;
+    width: 18rem;
     border: 1px solid whitesmoke;
     border-radius: 1rem;
     margin: 1rem;
@@ -56,8 +56,8 @@ li a:hover{
 }
 .origins span{
     border-radius: 1.5rem;
-    background-color: whitesmoke;
-    color: grey;
+    background-color: rgb(231, 224, 224);
+    color: rgb(126, 123, 123);
     font-size: .8rem;
     margin-right: .3rem;
     display: inline-block;
@@ -69,5 +69,5 @@ li a:hover{
     text-align: right;
 }
 .price{
-    color: gray;
+    color: rgb(107, 103, 103);
 }
