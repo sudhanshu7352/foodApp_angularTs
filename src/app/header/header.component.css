@@ -2,7 +2,6 @@ header{
     background-color: #fff;
     padding: 0;
     border-bottom: 2px solid #a82424;
-
 }
 a{
     color: #af1313;
@@ -16,6 +15,7 @@ a:hover{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
 }
 a.logo{
     font-weight: bold;

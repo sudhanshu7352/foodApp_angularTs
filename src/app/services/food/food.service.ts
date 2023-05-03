@@ -1,12 +1,30 @@
 import { Injectable } from '@angular/core';
 import { Foods } from 'src/app/shared/models/food';
+import { Tag } from 'src/app/shared/models/tag';
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
 
   constructor() { }
+  getAllFoodByTag(tag:string) :Foods[]{
+    if(tag =='All')
+    return this.getAll()
+    else
+    return this.getAll().filter(food=>food.tags?.includes(tag));
+  }
+  getAllTag():Tag[]{
+    return[
+      {name:'All',count:10},
+      {name :'Fastfood',count:4},
+      {name :'Pizza',count:2},
+      {name :'Lunch',count:3},
+      {name :'Meal',count:4},
+      {name :'Slowfood',count:4}
 
+
+    ]
+  }
   getAll():Foods[]{
     return [
      {
@@ -18,7 +36,7 @@ export class FoodService {
        origins:['India','UK','USA'],
        star:4.0,
        imageUrl: '/assets/food1.jpg',
-       tags:['meal','Dinner']
+       tags:['Meal','Slowfood']
      },
      {
       id:2,
@@ -29,7 +47,7 @@ export class FoodService {
       origins:['Italy','Germany'],
       star:4.3,
       imageUrl: '/assets/food2.jpg',
-      tags:['fastfood','lunch','pizza']
+      tags:['fastfood','Pizza']
     },
     {
       id:3,
@@ -40,7 +58,7 @@ export class FoodService {
       origins:['India'],
       star:4.6,
       imageUrl: '/assets/food3.jpg',
-      tags:['meal','Dinner']
+      tags:['snack','Fastfood']
     },
     {
       id:4,
@@ -51,7 +69,7 @@ export class FoodService {
       origins:['france','china','uk'],
       star:3.5,
       imageUrl: '/assets/food4.jpg',
-      tags:['meal','Dinner']
+      tags:['fry','Fastfood']
     },
     {
       id:5,
@@ -62,7 +80,7 @@ export class FoodService {
       origins:['India','UK'],
       star:3.5,
       imageUrl: '/assets/food5.jpg',
-      tags:['meal','Dinner']
+      tags:['Lunch','Fastfood']
     },
     {
       id:6,
@@ -73,7 +91,7 @@ export class FoodService {
       origins:['India','Bangladesh','UK'],
       star:4.5,
       imageUrl: '/assets/food6.jpg',
-      tags:['fastFood','Snack']
+      tags:['Meal','Slowfood']
     },
     {
       id:7,
@@ -84,7 +102,7 @@ export class FoodService {
       origins:['India','UK'],
       star:4.0,
       imageUrl: '/assets/food7.jpg',
-      tags:['meal','Dinner']
+      tags:['Lunch','Slowfood']
     },
     {
       id:8,
@@ -95,7 +113,7 @@ export class FoodService {
       origins:['India','sri lanka'],
       star:3.8,
       imageUrl: '/assets/food8.jpg',
-      tags:['meal','Dinner']
+      tags:['Meal','Lunch']
     },
     {
       id:9,
@@ -106,7 +124,7 @@ export class FoodService {
       origins:['India','Australia'],
       star:4.8,
       imageUrl: '/assets/food9.jpg',
-      tags:['meal','Dinner']
+      tags:['Meal','Slowfood']
     },
     {
     id:10,
@@ -117,7 +135,7 @@ export class FoodService {
     origins:['Italy','Germany','USA'],
     star:4.6,
     imageUrl: '/assets/food10.jpg',
-    tags:['fastfood','lunch','pizza']
+    tags:['Fastfood','Pizza']
   }
     ]
   }
