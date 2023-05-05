@@ -72,23 +72,24 @@ ul .remove-button:hover{
 .checkout>div{
     display: flex;
     flex: 3;
-    flex-direction: column;
+    /* flex-direction: row; */
     align-items: flex-start;
     justify-content: center;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 1.4rem;
+    color: rgb(10, 71, 201);
     /* border: 1px solid black; */
 }
 .checkout .foods-count{
     margin-bottom: 1.5rem;
 }
 .checkout .foods-count::before{
-    content: 'Total Product: ';
+    content: 'Total Product : ';
     color: gray;
 }
 
 .checkout .total-price::before{
-    content: 'Total Price: ';
+    content: 'Total Price : ';
     color: gray;
 }
 .checkout a{

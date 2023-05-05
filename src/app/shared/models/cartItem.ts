@@ -7,6 +7,7 @@ export class CartItem{
     food:Foods;
     quantity:number=1;
     get price():number{
+        // console.log(this.food.price,this.quantity);
         return this.food.price * this.quantity;
     }
 }

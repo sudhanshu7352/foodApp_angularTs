@@ -8,6 +8,7 @@ export class Cart{
         this.items.forEach(item=>{
             totalPrice+=item.price
         })
+       // console.log("tp",totalPrice,this.items)
         return totalPrice;
     }
 }
